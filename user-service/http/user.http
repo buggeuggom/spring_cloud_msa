@@ -1,0 +1,8 @@
+POST http://localhost:51195/users
+Content-Type: application/json
+
+{
+  "email": "hwandsaginksyu",
+  "pwd": "asds",
+  "name": "hwasng"
+}

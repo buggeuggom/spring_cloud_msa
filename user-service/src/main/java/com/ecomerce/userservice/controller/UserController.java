@@ -1,10 +1,15 @@
 package com.ecomerce.userservice.controller;
 
 import com.ecomerce.userservice.controller.request.RequestUser;
+import com.ecomerce.userservice.controller.response.ResponseUser;
+import com.ecomerce.userservice.dto.UserDto;
 import com.ecomerce.userservice.service.UserService;
 import com.ecomerce.userservice.vo.Greeting;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import static org.springframework.http.HttpStatus.*;
 
 @RestController
 @RequestMapping("/")
@@ -16,19 +21,18 @@ public class UserController {
 
     @GetMapping("/health-check")
     public String staus() {
-        return "[UserService] It is OK";
-    }
+        //return greeting.getMessage();
 
-    @GetMapping("/welcome")
-    public String welcome() {
-        return greeting.getMessage();
+        return "OK";
     }
 
     @PostMapping("/users")
-    public String creatUser(@RequestBody RequestUser request) {
+    public ResponseEntity<ResponseUser> creatUser(@RequestBody RequestUser request) {
 
-        userService.createUser(request);
+        UserDto user = userService.createUser(request);
 
-        return "User is created";
+        return  ResponseEntity
+                .status(CREATED)
+                .body(new ResponseUser(user));
     }
 }
