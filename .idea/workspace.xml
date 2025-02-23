@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e38fade7-485b-4f93-bbe1-62074267a9b4" name="변경" comment="feat: user service 개발 중" />
+    <list default="true" id="e38fade7-485b-4f93-bbe1-62074267a9b4" name="변경" comment="feat: user service 개발 중">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +16,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;buggeuggom&quot;
+    &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">{
@@ -79,6 +85,8 @@
       <updated>1730806807047</updated>
       <workItem from="1730806808150" duration="652000" />
       <workItem from="1730815065073" duration="676000" />
+      <workItem from="1740222446380" duration="723000" />
+      <workItem from="1740223230309" duration="66000" />
     </task>
     <task id="LOCAL-00001" summary="feat: user service 개발 중">
       <option name="closed" value="true" />
